@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UIAElement Class Reference</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Reference">
+    
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40009903">
+	<meta id="document-version" name="document-version" content="4.1.0">
+    <meta id="build" name="build" content="d2e1c22765a94301f596b873753aee9e">
+    <meta id="chapterId" name="chapterId" content="TP40009903-CH1">
+    <meta id="date" name="date" content="2012-12-13">
+    <meta id="description" name="description" content="Describes the API for automating tests of user interface elements in iPhone applications.">
+    <meta id="book-title" name="book-title" content="UIAElement Class Reference">
+    <meta id="book-root" name="book-root" content="../">
+    <meta id="book-json" name="book-json" content="../book.json">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Reference}, {Framework/Core Services Layer/UIAutomation}">
+    <meta name="pdf" contents="../UIAElementClassReference.pdf" /><link id="book-pdf" media="print" rel="alternate" type="application/pdf" href="../UIAElementClassReference.pdf" />
+    
+    <meta id="generator" name="generator" content="Gutenberg 31259">
+    <meta name='numbat' content='aa879094b666337fdcde744b62fbff30'>
+    <meta id="copyright" name="copyright" content="Copyright 2013 Apple Inc. All Rights Reserved.">
+    <meta name = "viewport" content = "width = device-width" >
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="UIAElement Class Reference">
+    <meta id="resources-uri" name="resources-uri" content="../../../../../Resources/681">
+    <link id="book-index-page" rel="Start" title="UIAElement Class Reference" type="text/html" href="../index.html">
+    <link id="next-page" rel="Next" type="text/html" href="../RevisionHistory/RevisionHistory.html">
+    <link id="previous-page" rel="Prev" type="text/html" href="">
+    <link rel="stylesheet" type="text/css" href="ac_media.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="devpubs.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="docs.css" charset="utf-8">
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="ie.css"><![endif]-->
+    
+</head>    
+<body><a name="//apple_ref/doc/uid/TP40009903-CH1" title="UIAElement"></a>
+    <article id="contents" tabindex="0" role="main">
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../RevisionHistory/RevisionHistory.html'>Next</a>
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="../index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/TP40009903" title="UIAElement"></a><a name="//apple_ref/javascript/cl/UIAElement" title="UIAElement"></a><a name="//apple_ref/doc/js_ref/UIAElement" title="UIAElement"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW1" title="UIAElement"></a><h1 id="pageTitle">UIAElement Class Reference</h1><div class="spec_sheet_info_box"><table cellspacing="0" class="specbox"><tr><td scope="row"><strong>Availability</strong></td><td><div class="zSharedSpecBoxHeadList"><div>Available in iOS 4.0 and later.</div></div></td></tr></table></div><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_1" title="Overview"></a><h2 class="jump">Overview</h2><p class="abstract">The <code>UIAElement</code> class is the superclass for all user interface elements in the context of the Automation instrument for automating user interface testing of iOS apps.</p><p>For an explanation of how to use this class and related classes, see <span class="content_text"><a href="../../../../DeveloperTools/Conceptual/InstrumentsUserGuide/UsingtheAutomationInstrument/UsingtheAutomationInstrument.html#//apple_ref/doc/uid/TP40004652-CH20" target="_self">“Automating UI Testing”</a></span> in <em><a href="../../../../DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004652" target="_self">Instruments User Guide</a></em>.</p><div id="Tasks_section" class="zMethodsByTask"><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_2" title="Tasks"></a><h2 class="jump zMethodsByTask_Name">Tasks</h2>
+<a name="//apple_ref/doc/uid/TP40009903-CH1-SW3" title="Determining Element Positioning"></a>
+		<h3 class="tasks">Determining Element Positioning</h3>
+		
+		
+		
+		
+		<ul class="tooltip">
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/hitpoint">hitpoint</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns the screen position to tap for the specified element.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/rect">rect</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns the position of the object on the main screen.'></span>
+                    
+                </span></li>
+			
+		</ul>
+
+
+<a name="//apple_ref/doc/uid/TP40009903-CH1-SW6" title="Determining and Manipulating Element Hierarchy"></a>
+		<h3 class="tasks">Determining and Manipulating Element Hierarchy</h3>
+		
+		
+		
+		
+		<ul class="tooltip">
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/activityIndicators">activityIndicators</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of the activity indicators contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/activityView">activityView</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an object representing an activity view.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/ancestry">ancestry</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array containing the parents of the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/buttons">buttons</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of buttons contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/collectionViews">collectionViews</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of collection views contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/elements">elements</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of elements contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/images">images</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of images contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/links">links</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of links contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/navigationBar">navigationBar</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns the app’s navigation bar.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/navigationBars">navigationBars</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of navigation bar objects contained by this object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/pageIndicators">pageIndicators</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of page indicators contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/parent">parent</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns the parent of the specified element.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/pickers">pickers</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of picker objects contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/popover">popover</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns the popover object associated with the specified object, if one exists. '></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/progressIndicators">progressIndicators</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of progress indicators contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/scrollViews">scrollViews</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of scroll views contained by the specified object.
+'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/searchBars">searchBars</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of search bars contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/secureTextFields">secureTextFields</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of secure text fields contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/segmentedControls">segmentedControls</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of segmented controls contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/sliders">sliders</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of sliders contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/staticTexts">staticTexts</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of static texts contained by the specified object.
+'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/switches">switches</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of switches contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/tabBar">tabBar</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns the specified tab bar.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/tabBars">tabBars</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of tab bars contained by this object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/tableViews">tableViews</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of table views contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/textFields">textFields</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of text fields contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/textViews">textViews</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of text views contained by the specified object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/toolbar">toolbar</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns the specified toolbar.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/toolbars">toolbars</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of toolbars contained by this object.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/webViews">webViews</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an array of web views contained by the specified object.'></span>
+                    
+                </span></li>
+			
+		</ul>
+
+
+<a name="//apple_ref/doc/uid/TP40009903-CH1-SW27" title="Gestures and Actions"></a>
+		<h3 class="tasks">Gestures and Actions</h3>
+		
+		
+		
+			<p>These methods allow you to effect the common gestures and actions a user can perform through the user interface. Options are available for use with some of these methods to give you flexibility in defining and varying the attributes of the gesture or action to be performed.</p>
+		
+		
+		<ul class="tooltip">
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/doubleTap">doubleTap</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Double-taps the specified element.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/dragInsideWithOptions">dragInsideWithOptions</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Drags within the bounds of an element.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/flickInsideWithOptions">flickInsideWithOptions</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Flicks within the bounds of an element.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/rotateWithOptions">rotateWithOptions</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Perform a rotation gesture centered on the specified element.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/scrollToVisible">scrollToVisible</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Scrolls until the specified element is visible in a container view.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/tap">tap</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Taps the specified element.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/tapWithOptions">tapWithOptions</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Performs the specified gesture on the specified element using a dictionary to specify gesture attributes.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/touchAndHold">touchAndHold</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Touches the specified element and holds for the specified duration.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/twoFingerTap">twoFingerTap</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Performs a two-finger (two-touch) tap on this element.'></span>
+                    
+                </span></li>
+			
+		</ul>
+
+
+<a name="//apple_ref/doc/uid/TP40009903-CH1-SW42" title="Determining Element State"></a>
+		<h3 class="tasks">Determining Element State</h3>
+		
+		
+		
+			<p>Use these methods to determine whether an element is still valid.</p>
+		
+		
+		<ul class="tooltip">
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/checkIsValid">checkIsValid</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns the specified element’s current validity status.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/hasKeyboardFocus">hasKeyboardFocus</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Determines whether the specified element receives keyboard input.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/isEnabled">isEnabled</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Determines whether the specified element is enabled.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/isValid">isValid</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns the specified element’s validity status as of the most recent access.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/isVisible">isVisible</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Determines whether the specified element is visible on the screen.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/waitForInvalid">waitForInvalid</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Waits for the specified element to become invalid.'></span>
+                    
+                </span></li>
+			
+		</ul>
+
+
+<a name="//apple_ref/doc/uid/TP40009903-CH1-SW48" title="Identifying Elements"></a>
+		<h3 class="tasks">Identifying Elements</h3>
+		
+		
+		
+		
+		<ul class="tooltip">
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/label">label</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns a string containing the label attribute of the element.
+'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/name">name</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns a string containing the name attribute of the element.
+'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/value">value</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns a string containing a value attribute specific to the type of element.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/withName">withName</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns an element whose name attribute matches a specified string.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/withPredicate">withPredicate</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns the element matching the specified criteria.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/withValueForKey">withValueForKey</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Returns the element containing the specified property with the specified value.'></span>
+                    
+                </span></li>
+			
+		</ul>
+
+
+<a name="//apple_ref/doc/uid/TP40009903-CH1-SW54" title="Logging Element Information"></a>
+		<h3 class="tasks">Logging Element Information</h3>
+		
+		
+		
+		
+		<ul class="tooltip">
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/logElement">logElement</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Logs information about the specified element.'></span>
+                    
+                </span></li>
+			
+				
+                <li><span class="tooltip">
+                    
+                    <code><a href="#//apple_ref/javascript/instm/UIAElement/logElementTree">logElementTree</a></code>
+                    
+                    			
+                        <span class="tooltipicon" data-abstract='Logs information about the specified element and all of its subelements.'></span>
+                    
+                </span></li>
+			
+		</ul>
+
+
+</div><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_3" title="Methods"></a><h2 class="jump">Methods</h2><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/activityIndicators" title="activityIndicators"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW10" title="activityIndicators"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_4"></a><h3 class="jump method">activityIndicators</h3><p class="abstract">Returns an array of the activity indicators contained by the specified object.</p><div class="declaration">(UIAElementArray) activityIndicators()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/activityView" title="activityView"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW32" title="activityView"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_5"></a><h3 class="jump method">activityView</h3><p class="abstract">Returns an object representing an activity view.</p><div class="declaration">(UIAActivityView) activityView()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 6.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/ancestry" title="ancestry"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW9" title="ancestry"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_6"></a><h3 class="jump method">ancestry</h3><p class="abstract">Returns an array containing the parents of the specified object.</p><div class="declaration">(UIAElementArray) ancestry()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/buttons" title="buttons"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW11" title="buttons"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_7"></a><h3 class="jump method">buttons</h3><p class="abstract">Returns an array of buttons contained by the specified object.</p><div class="declaration">(UIAElementArray) buttons()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/checkIsValid" title="checkIsValid"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW43" title="checkIsValid"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_8"></a><h3 class="jump method">checkIsValid</h3><p class="abstract">Returns the specified element’s current validity status.</p><div class="declaration">(Boolean) checkIsValid()</div><div class="api discussion"><h5>Discussion</h5><p>Use this method to determine whether the user interface element represented by the specified UIAElement currently exists. You should use <code>checkIsValid</code>, for example, if you’re referencing an element after having performed some action that may have changed the UI state of that element in some way. This requires a call to the underlying Accessibility framework to ensure the validity of the result. </p></div>  <div class="api seeAlso"><h5>See Also</h5><ul><li>  <code>isValid</code></li></ul></div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/collectionViews" title="collectionViews"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW33" title="collectionViews"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_9"></a><h3 class="jump method">collectionViews</h3><p class="abstract">Returns an array of collection views contained by the specified object.</p><div class="declaration">(UIAElementArray collectionViews()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 6.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/doubleTap" title="doubleTap"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW36" title="doubleTap"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_10"></a><h3 class="jump method">doubleTap</h3><p class="abstract">Double-taps the specified element.</p><div class="declaration">(undefined) doubleTap()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/dragInsideWithOptions" title="dragInsideWithOptions"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW39" title="dragInsideWithOptions"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_11"></a><h3 class="jump method">dragInsideWithOptions</h3><p class="abstract">Drags within the bounds of an element.</p><div class="declaration">(undefined) dragInsideWithOptions(Object options)</div><div class="api parameters"><h5>Parameters</h5><dl class="termdef"><dt><em>options</em></dt><dd><p>A dictionary that specifies characteristics of the gesture. Valid keys are as follows:</p><div class="tableholder"><table class="graybox" border = "0" cellspacing="0" cellpadding="5"><tr><td  scope="row"><p><code>touchCount</code></p></td><td ><p>The number of touches to use in the specified gesture. (Effectively, the number of fingers a user would use to make the specified gesture.) The default touch count value is 1.</p></td></tr><tr><td  scope="row"><p><code>duration</code></p></td><td ><p>The length of hold time for the specified gesture. The default duration value for a tap is 0. The default value for touch-and-hold gestures (such as drag, pinch open, and pinch close) is 1.</p></td></tr><tr><td  scope="row"><p><code>startOffset</code></p></td><td ><p>The first offset to use for a multiple-point gesture. The default value is {x:0.0, y:0.0}. See the discussion for details.</p></td></tr><tr><td  scope="row"><p><code>endOffset</code></p></td><td ><p>The last offset to use for a multiple-point gesture. The default value is {x:0.0, y:0.0}. See the discussion for details.</p></td></tr></table></div></dd></dl></div><div class="api discussion"><h5>Discussion</h5><p>You can use offsets to achieve finer precision in specifying the hitpoint within the <code>rect</code> for the specified element. The offset comprises a pair of x and y values, each ranging from 0.0 to 1.0. These values represent, respectively, relative horizontal and vertical positions within the <code>rect</code>, with  {x:0.0, y:0.0} as the top left and  {x:1.0, y:1.0} as the bottom right. Thus, {x:0.3, y:0.6} specifies a position just below and to the left of center, and {x:1.0, y:0.5} specifies a position centered vertically at the far right.</p><p>This example performs a slow drag within the target element from left edge to right edge, just below the top: </p><p><code>target.dragInsideWithOptions({startOffset:{x:0.0, y:0.1}, endOffset:{x:1.0, y:0.1}, duration:1.5});</code></p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/elements" title="elements"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW8" title="elements"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_12"></a><h3 class="jump method">elements</h3><p class="abstract">Returns an array of elements contained by the specified object.</p><div class="declaration">(UIAElementArray) elements()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/flickInsideWithOptions" title="flickInsideWithOptions"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW40" title="flickInsideWithOptions"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_13"></a><h3 class="jump method">flickInsideWithOptions</h3><p class="abstract">Flicks within the bounds of an element.</p><div class="declaration">(undefined) flickInsideWithOptions(Object options)</div><div class="api parameters"><h5>Parameters</h5><dl class="termdef"><dt><em>options</em></dt><dd><p>A dictionary that specifies characteristics of the gesture. Valid keys are as follows:</p><div class="tableholder"><table class="graybox" border = "0" cellspacing="0" cellpadding="5"><tr><td  scope="row"><p><code>touchCount</code></p></td><td ><p>The number of touches to use in the specified gesture. (Effectively, the number of fingers a user would use to make the specified gesture.) The default touch count value is 1.</p></td></tr><tr><td  scope="row"><p><code>startOffset</code></p></td><td ><p>The first offset to use for a multiple-point gesture. The default value is {x:0.0, y:0.0}. See the discussion for details.</p></td></tr><tr><td  scope="row"><p><code>endOffset</code></p></td><td ><p>The last offset to use for a multiple-point gesture. The default value is {x:0.0, y:0.0}. See the discussion for details.</p></td></tr></table></div></dd></dl></div><div class="api discussion"><h5>Discussion</h5><p>You can use offsets to achieve finer precision in specifying the hitpoint within the <code>rect</code> for the specified element. The offset comprises a pair of x and y values, each ranging from 0.0 to 1.0. These values represent, respectively, relative horizontal and vertical positions within the <code>rect</code>, with  {x:0.0, y:0.0} as the top left and  {x:1.0, y:1.0} as the bottom right. Thus, {x:0.3, y:0.6} specifies a position just below and to the left of center, and {x:1.0, y:0.5} specifies a position centered vertically at the far right.</p><p>This example performs a flick just above the bottom edge of the target element, from center to right edge: </p><p><code>target.flickInsideWithOptions({startOffset:{x:0.5, y:0.9}, endOffset:{x:1.0, y:0.9}});</code></p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/hasKeyboardFocus" title="hasKeyboardFocus"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW45" title="hasKeyboardFocus"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_14"></a><h3 class="jump method">hasKeyboardFocus</h3><p class="abstract">Determines whether the specified element receives keyboard input.</p><div class="declaration">(Number) hasKeyboardFocus()</div><div class="return_value"><h5 class="tight">Return Value</h5><p>Returns 1 if the specified element is the receiver of keyboard input, 0 if not. If the status is not available, it returns null.</p></div>   <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/hitpoint" title="hitpoint"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW4" title="hitpoint"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_15"></a><h3 class="jump method">hitpoint</h3><p class="abstract">Returns the screen position to tap for the specified element.</p><div class="declaration">(Point) hitpoint()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/images" title="images"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW12" title="images"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_16"></a><h3 class="jump method">images</h3><p class="abstract">Returns an array of images contained by the specified object.</p><div class="declaration">(UIAElementArray) images()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/isEnabled" title="isEnabled"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW46" title="isEnabled"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_17"></a><h3 class="jump method">isEnabled</h3><p class="abstract">Determines whether the specified element is enabled.</p><div class="declaration">(Number) isEnabled()</div><div class="return_value"><h5 class="tight">Return Value</h5><p>Returns 1 if the specified element is enabled, 0 if not. If the status is not available, it returns null.</p></div>   <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/isValid" title="isValid"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW2" title="isValid"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_18"></a><h3 class="jump method">isValid</h3><p class="abstract">Returns the specified element’s validity status as of the most recent access.</p><div class="declaration">(Boolean) isValid()</div><div class="api discussion"><h5>Discussion</h5><p>Use this method to determine whether the user interface element represented by the specified UIAElement existed as of the last attempt to access it. To be certain that the element exists, use <code>checkIsValid</code> instead.</p></div>  <div class="api seeAlso"><h5>See Also</h5><ul><li>  <code>checkIsValid</code></li></ul></div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/isVisible" title="isVisible"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW47" title="isVisible"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_19"></a><h3 class="jump method">isVisible</h3><p class="abstract">Determines whether the specified element is visible on the screen.</p><div class="declaration">(Number) isVisible()</div><div class="return_value"><h5 class="tight">Return Value</h5><p>Returns 1 if the user interface element represented by the specified element is visible on screen, 0 if not. If the status is not available, it returns null.</p></div>   <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/label" title="label"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW31" title="label"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_20"></a><h3 class="jump method">label</h3><p class="abstract">Returns a string containing the label attribute of the element.
+</p><div class="declaration">(String) label()</div><div class="api discussion"><h5>Discussion</h5><p>This method always returns the label attribute string. (Contrast with the <code><a href="#//apple_ref/javascript/instm/UIAElement/name">name</a></code> method.)</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 5.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/links" title="links"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW13" title="links"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_21"></a><h3 class="jump method">links</h3><p class="abstract">Returns an array of links contained by the specified object.</p><div class="declaration">(UIAElementArray) links()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/logElement" title="logElement"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW55" title="logElement"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_22"></a><h3 class="jump method">logElement</h3><p class="abstract">Logs information about the specified element.</p><div class="declaration">(undefined) logElement()</div><div class="api discussion"><h5>Discussion</h5><p>This method can be used with any element.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/logElementTree" title="logElementTree"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW56" title="logElementTree"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_23"></a><h3 class="jump method">logElementTree</h3><p class="abstract">Logs information about the specified element and all of its subelements.</p><div class="declaration">(undefined) logElementTree()</div><div class="api discussion"><h5>Discussion</h5><p>This method can be used with any element.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/name" title="name"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW49" title="name"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_24"></a><h3 class="jump method">name</h3><p class="abstract">Returns a string containing the name attribute of the element.
+</p><div class="declaration">(String) name()</div><div class="api discussion"><h5>Discussion</h5><p>The element name is derived from the accessibility attribute of the underlying view.  If an identifier attribute string is specified, that string is used as the name; otherwise, the label attribute string is used as the name. Contrast with the <code><a href="#//apple_ref/javascript/instm/UIAElement/label">label</a></code> method.</p><p>For more information, see <em><a href="../../../../UIKit/Reference/UIAccessibilityIdentification_Protocol/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010953" target="_self">UIAccessibilityIdentification Protocol Reference</a></em>.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/navigationBar" title="navigationBar"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW60" title="navigationBar"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_25"></a><h3 class="jump method">navigationBar</h3><p class="abstract">Returns the app’s navigation bar.</p><div class="declaration">(UIAElement) navigationBar()</div><div class="api discussion"><h5>Discussion</h5><p>This method has been moved up to this class from the UIAWindow Class.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/navigationBars" title="navigationBars"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW61" title="navigationBars"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_26"></a><h3 class="jump method">navigationBars</h3><p class="abstract">Returns an array of navigation bar objects contained by this object.</p><div class="declaration">(UIAElementArray) navigationBars()</div><div class="api discussion"><h5>Discussion</h5><p>This method has been moved up to this class from the UIAWindow Class.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/pageIndicators" title="pageIndicators"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW14" title="pageIndicators"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_27"></a><h3 class="jump method">pageIndicators</h3><p class="abstract">Returns an array of page indicators contained by the specified object.</p><div class="declaration">(UIAElementArray) pageIndicators()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/parent" title="parent"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW7" title="parent"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_28"></a><h3 class="jump method">parent</h3><p class="abstract">Returns the parent of the specified element.</p><div class="declaration">(UIAElement) parent()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.2 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/pickers" title="pickers"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW29" title="pickers"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_29"></a><h3 class="jump method">pickers</h3><p class="abstract">Returns an array of picker objects contained by the specified object.</p><div class="declaration">(UIAElementArray) pickers()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/popover" title="popover"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW15" title="popover"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_30"></a><h3 class="jump method">popover</h3><p class="abstract">Returns the popover object associated with the specified object, if one exists. </p><div class="declaration">(UIAPopover) popover()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.2 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/progressIndicators" title="progressIndicators"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW16" title="progressIndicators"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_31"></a><h3 class="jump method">progressIndicators</h3><p class="abstract">Returns an array of progress indicators contained by the specified object.</p><div class="declaration">(UIAElementArray) progressIndicators()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/rect" title="rect"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW5" title="rect"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_32"></a><h3 class="jump method">rect</h3><p class="abstract">Returns the position of the object on the main screen.</p><div class="declaration">(Rect) rect()</div><div class="api discussion"><h5>Discussion</h5><p>Your script should treat the <code>rect</code> object as a generic JavaScript object whose properties for origin, x, y, size, width, and height correspond to those of the analogous CGRect Cocoa structure. The rect object has the form <code>{origin:{x:</code><em>xposition</em><code>,y:</code><em>yposition</em><code>}, size:{width:</code><em>widthvalue</em><code>, height:</code><em>heightvalue</em><code>}}</code>.  The relevant coordinates are screen-relative and are adjusted to account for device orientation.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/rotateWithOptions" title="rotateWithOptions"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW30" title="rotateWithOptions"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_33"></a><h3 class="jump method">rotateWithOptions</h3><p class="abstract">Perform a rotation gesture centered on the specified element.</p><div class="declaration">(undefined) rotateWithOptions(Object options)</div><div class="api parameters"><h5>Parameters</h5><dl class="termdef"><dt><em>options</em></dt><dd><p>A dictionary that specifies characteristics of the rotation gesture. Valid keys are as follows:</p><div class="tableholder"><table class="graybox" border = "0" cellspacing="0" cellpadding="5"><tr><td  scope="row"><p><code>centerOffset</code></p></td><td ><p>The offset to use for the center of the rotate gesture. The default offset value is {x:0.0, y:0.0}.</p></td></tr><tr><td  scope="row"><p><code>duration</code></p></td><td ><p>The length of hold time for the specified gesture, in seconds. The default duration value is 1.</p></td></tr><tr><td  scope="row"><p><code>radius</code></p></td><td ><p>The distance in points from the center to the edge of the circular path.</p></td></tr><tr><td  scope="row"><p><code>rotation</code></p></td><td ><p>The length of rotation in radians. The default is pi (π).</p></td></tr><tr><td  scope="row"><p><code>touchCount</code></p></td><td ><p>The number of touches to use in the specified gesture. (Effectively, the number of fingers a user would use to make the specified gesture.) Valid values are 1 to 5. The default is 2.</p></td></tr></table></div></dd></dl></div><div class="api discussion"><h5>Discussion</h5><p>This gesture is generated such that each touch is equidistant from the others. </p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/scrollToVisible" title="scrollToVisible"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW41" title="scrollToVisible"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_34"></a><h3 class="jump method">scrollToVisible</h3><p class="abstract">Scrolls until the specified element is visible in a container view.</p><div class="declaration">(undefined) scrollToVisible()</div><div class="api discussion"><h5>Discussion</h5><p>Use this method with tables and web views.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/scrollViews" title="scrollViews"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW28" title="scrollViews"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_35"></a><h3 class="jump method">scrollViews</h3><p class="abstract">Returns an array of scroll views contained by the specified object.
+</p><div class="declaration">(UIAElementArray) scrollViews()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/searchBars" title="searchBars"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW24" title="searchBars"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_36"></a><h3 class="jump method">searchBars</h3><p class="abstract">Returns an array of search bars contained by the specified object.</p><div class="declaration">(UIAElementArray) searchBars()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/secureTextFields" title="secureTextFields"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW23" title="secureTextFields"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_37"></a><h3 class="jump method">secureTextFields</h3><p class="abstract">Returns an array of secure text fields contained by the specified object.</p><div class="declaration">(UIAElementArray) secureTextFields()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/segmentedControls" title="segmentedControls"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW17" title="segmentedControls"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_38"></a><h3 class="jump method">segmentedControls</h3><p class="abstract">Returns an array of segmented controls contained by the specified object.</p><div class="declaration">(UIAElementArray) segmentedControls()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/sliders" title="sliders"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW18" title="sliders"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_39"></a><h3 class="jump method">sliders</h3><p class="abstract">Returns an array of sliders contained by the specified object.</p><div class="declaration">(UIAElementArray) sliders()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/staticTexts" title="staticTexts"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW19" title="staticTexts"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_40"></a><h3 class="jump method">staticTexts</h3><p class="abstract">Returns an array of static texts contained by the specified object.
+</p><div class="declaration">(UIAElementArray) staticTexts()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/switches" title="switches"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW20" title="switches"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_41"></a><h3 class="jump method">switches</h3><p class="abstract">Returns an array of switches contained by the specified object.</p><div class="declaration">(UIAElementArray) switches()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/tabBar" title="tabBar"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW62" title="tabBar"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_42"></a><h3 class="jump method">tabBar</h3><p class="abstract">Returns the specified tab bar.</p><div class="declaration">(UIAElement) tabBar()</div><div class="api discussion"><h5>Discussion</h5><p>This method has been moved up to this class from the UIAWindow Class.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/tabBars" title="tabBars"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW63" title="tabBars"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_43"></a><h3 class="jump method">tabBars</h3><p class="abstract">Returns an array of tab bars contained by this object.</p><div class="declaration">(UIAElementArray) tabBars()</div><div class="api discussion"><h5>Discussion</h5><p>This method has been moved up to this class from the UIAWindow Class.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/tableViews" title="tableViews"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW21" title="tableViews"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_44"></a><h3 class="jump method">tableViews</h3><p class="abstract">Returns an array of table views contained by the specified object.</p><div class="declaration">(UIAElementArray) tableViews()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/tap" title="tap"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW34" title="tap"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_45"></a><h3 class="jump method">tap</h3><p class="abstract">Taps the specified element.</p><div class="declaration">(undefined) tap()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/tapWithOptions" title="tapWithOptions"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW38" title="tapWithOptions"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_46"></a><h3 class="jump method">tapWithOptions</h3><p class="abstract">Performs the specified gesture on the specified element using a dictionary to specify gesture attributes.</p><div class="declaration">(undefined) tapWithOptions(Object options)</div><div class="api parameters"><h5>Parameters</h5><dl class="termdef"><dt><em>options</em></dt><dd><p>A dictionary that specifies characteristics of the gesture. Valid keys are as follows:</p><div class="tableholder"><table class="graybox" border = "0" cellspacing="0" cellpadding="5"><tr><td  scope="row"><p><code>tapCount</code></p></td><td ><p>The number of taps that compose the specified gesture. The default value is 1 (single tap).</p></td></tr><tr><td  scope="row"><p><code>touchCount</code></p></td><td ><p>The number of touches to use in the specified gesture. (Effectively, the number of fingers a user would use to make the specified gesture.) The default touch count value is 1.</p></td></tr><tr><td  scope="row"><p><code>duration</code></p></td><td ><p>The length of hold time for the specified gesture. The default duration value for a tap is 0. The default value for touch-and-hold gestures (such as drag, pinch open, and pinch close) is 1.</p></td></tr><tr><td  scope="row"><p><code>tapOffset</code></p></td><td ><p>The offset to use for the specified tap gesture. The default offset value is {x:0.0, y:0.0}. See the discussion for details.</p></td></tr></table></div></dd></dl></div><div class="api discussion"><h5>Discussion</h5><p>For example, you could specify a triple tap with two fingers at the center of the screen (on an iPhone in portrait orientation), as follows: </p><p><code>element.tapWithOptions({touchCount:2, tapCount:3});</code></p><p><code>element.tapWithOptions({touchCount:2, tapCount:3, tapOffset:{x:0.75, y:0.25}});</code></p><p>You can use offsets to achieve finer precision in specifying the hitpoint within the <code>rect</code> for the specified element. The offset comprises a pair of x and y values, each ranging from 0.0 to 1.0. These values represent, respectively, relative horizontal and vertical positions within the <code>rect</code>, with  {x:0.0, y:0.0} as the top left and  {x:1.0, y:1.0} as the bottom right. Thus, {x:0.3, y:0.6} specifies a position just below and to the left of center, and {x:1.0, y:0.5} specifies a position centered vertically at the far right.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/textFields" title="textFields"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW22" title="textFields"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_47"></a><h3 class="jump method">textFields</h3><p class="abstract">Returns an array of text fields contained by the specified object.</p><div class="declaration">(UIAElementArray) textFields()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/textViews" title="textViews"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW25" title="textViews"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_48"></a><h3 class="jump method">textViews</h3><p class="abstract">Returns an array of text views contained by the specified object.</p><div class="declaration">(UIAElementArray) textViews()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/toolbar" title="toolbar"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW65" title="toolbar"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_49"></a><h3 class="jump method">toolbar</h3><p class="abstract">Returns the specified toolbar.</p><div class="declaration">(UIAElement) toolbar()</div><div class="api discussion"><h5>Discussion</h5><p>This method has been moved up to this class from the UIAWindow Class.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/toolbars" title="toolbars"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW66" title="toolbars"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_50"></a><h3 class="jump method">toolbars</h3><p class="abstract">Returns an array of toolbars contained by this object.</p><div class="declaration">(UIAElementArray) toolbars()</div><div class="api discussion"><h5>Discussion</h5><p>This method has been moved up to this class from the UIAWindow Class.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/touchAndHold" title="touchAndHold"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW35" title="touchAndHold"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_51"></a><h3 class="jump method">touchAndHold</h3><p class="abstract">Touches the specified element and holds for the specified duration.</p><div class="declaration">(undefined) touchAndHold(Number duration)</div><div class="api parameters"><h5>Parameters</h5><dl class="termdef"><dt><em>duration</em></dt><dd><p>The length of time to hold the touch on the element, in seconds.The default duration value for a tap is 0. The default value for touch-and-hold gestures (such as drag, pinch open, and pinch close) is 1.</p></dd></dl></div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/twoFingerTap" title="twoFingerTap"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW37" title="twoFingerTap"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_52"></a><h3 class="jump method">twoFingerTap</h3><p class="abstract">Performs a two-finger (two-touch) tap on this element.</p><div class="declaration">(undefined) twoFingerTap()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/value" title="value"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW50" title="value"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_53"></a><h3 class="jump method">value</h3><p class="abstract">Returns a string containing a value attribute specific to the type of element.</p><div class="declaration">(String) value()</div><div class="api discussion"><h5>Discussion</h5><p>For example, a switch has a value of <code>1</code> for ON an <code>0</code> for OFF.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/waitForInvalid" title="waitForInvalid"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW44" title="waitForInvalid"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_54"></a><h3 class="jump method">waitForInvalid</h3><p class="abstract">Waits for the specified element to become invalid.</p><div class="declaration">(Boolean) waitForInvalid()</div><div class="api discussion"><h5>Discussion</h5><p>Waits for the user interface element represented by the specified UIAElement to become invalid. Uses the current <code>timeout</code> value for the wait time interval.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/webViews" title="webViews"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW26" title="webViews"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_55"></a><h3 class="jump method">webViews</h3><p class="abstract">Returns an array of web views contained by the specified object.</p><div class="declaration">(UIAElementArray) webViews()</div><div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/withName" title="withName"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW51" title="withName"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_56"></a><h3 class="jump method">withName</h3><p class="abstract">Returns an element whose name attribute matches a specified string.</p><div class="declaration">(UIAElement) withName(String name)</div><div class="api parameters"><h5>Parameters</h5><dl class="termdef"><dt><em>name</em></dt><dd><p>A string containing the name to test for.</p></dd></dl></div><div class="api discussion"><h5>Discussion</h5><p>Tests if the name attribute of the element has the given string value. If the match fails, the test is retried until the current <code>timeout</code> expires.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/withPredicate" title="withPredicate"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW52" title="withPredicate"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_57"></a><h3 class="jump method">withPredicate</h3><p class="abstract">Returns the element matching the specified criteria.</p><div class="declaration">(UIAElement) withPredicate(PredicateString predicateString)</div><div class="api parameters"><h5>Parameters</h5><dl class="termdef"><dt><em>predicateString</em></dt><dd><p>A string specifying the match criteria.</p></dd></dl></div><div class="api discussion"><h5>Discussion</h5><p>Uses the specified predicate string to test for a match. If the match fails, the test is retried until the current <code>timeout</code> expires. See <em>Predicate Programming Guide</em> for information about using predicates.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div><div class="api method"><a name="//apple_ref/javascript/instm/UIAElement/withValueForKey" title="withValueForKey"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-SW53" title="withValueForKey"></a><a name="//apple_ref/doc/uid/TP40009903-CH1-DontLinkElementID_58"></a><h3 class="jump method">withValueForKey</h3><p class="abstract">Returns the element containing the specified property with the specified value.</p><div class="declaration">(UIAElement) withValueForKey(NotTyped value, String key)</div><div class="api parameters"><h5>Parameters</h5><dl class="termdef"><dt><em>value</em></dt><dd><p>A string specifying the value that the specified property, if it exists, should match.</p></dd><dt><em>key</em></dt><dd><p>A string specifying the property to test for.</p></dd></dl></div><div class="api discussion"><h5>Discussion</h5><p>Tests if the element has a specified property with the specified value. If the match fails, the test is retried until the current <code>timeout</code> expires.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in iOS 4.0 and later.</li></ul></div></div>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../RevisionHistory/RevisionHistory.html'>Next</a>
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> &#x00a9; 2012 Apple Inc. All Rights Reserved. &#40;Last updated: 2012-12-13&#041;</p></div></div>
+
+        <div id="feedbackForm" class="hideOnPrint" style="margin-left: auto; margin-right: auto; width: 38em; margin-bottom: 15px; margin-top: 15px; font-weight: bold; color: #333333; background: #d9d9d9; padding: 5px 10px 5px 10px; height: 15px; text-align: center; -webkit-border-radius: 12px; -moz-border-radius: 12px; vertical-align: middle;">
+    Did this document help you?
+    <span class="tooltip" data-abstract="<b>Yes:</b> Tell us what works for you.">
+       <a href="/feedback/?v=1" class='urlLink'>Yes</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>It's good, but:</b> Report typos, inaccuracies, and so forth.">
+        <a href="/feedback/?v=2" class='urlLink'>It's good, but...</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>Not helpful:</b> Tell us what would have helped.">
+        <a href="/feedback/?v=3" class='urlLink'>Not helpful...</a>
+    </span>
+</div>
+        <div id="globalfooter" class="hideInXcode hideOnPrint">
+    <p class="gf-buy">Shop the <a href="http://www.apple.com/store/" target="_top">Apple Online Store</a> (1-800-MY-APPLE), visit an <a href="http://www.apple.com/retail/" target="_top">Apple Retail Store</a>, or find a <a href="http://www.apple.com/buy/locator/" target="_top">reseller</a>.</p>
+
+<ul class="gf-links piped">
+	<li><a class="first" href="http://lists.apple.com/" target="_top">Mailing Lists</a></li>
+	<li><a href="http://developer.apple.com/rss/" target="_top">RSS Feeds</a></li>
+</ul>
+
+<div class="gf-sosumi">
+    <p>Copyright &copy; 2010 Apple Inc. All rights reserved.</p>
+    <ul class="piped">
+    <li><a href="http://www.apple.com/legal/terms/site.html" class="first" target="_top">Terms of Use</a></li>
+    <li><a href="http://www.apple.com/legal/privacy/" target="_top">Privacy Policy</a></li>
+    </ul>
+</div>
+    </div><!--/globalfooter-->
+    </article>
+</body>
+<script charset="utf-8" src="../../../../../Resources/681/JavaScript/lib/prototype.js"></script>
+<!-- Media player includes -->
+<script charset="utf-8" src="../../../../../Resources/681/JavaScript/lib/scriptaculous.js"></script>
+<script charset="utf-8" src="../../../../../Resources/681/JavaScript/lib/event_mixins.js"></script>
+<script charset="utf-8" src="../../../../../Resources/681/JavaScript/lib/browserdetect.js"></script>
+<script charset="utf-8" src="../../../../../Resources/681/JavaScript/lib/ac_media.js"></script>
+<!-- /Media player includes -->
+<script charset="utf-8" src="../../../../../Resources/681/JavaScript/devpubs.js"></script>
+<script charset="utf-8" src="../../../../../Resources/681/JavaScript/book.js"></script>
+<script charset="utf-8" src="../../../../../Resources/681/JavaScript/tasks.js"></script>
+<script type="text/javascript" src="/library/webstats/pagetracker.js"></script>
+<script type="text/javascript">
+if(typeof PageTracker !== 'undefined') {
+  if(window.addEventListener) {
+    window.addEventListener("load", function(){PageTracker.logPageLoad()},false);
+  } else if(window.attachEvent) {
+    window.attachEvent("onload",function(){PageTracker.logPageLoad()});
+  }
+}
+</script>
+</html>
